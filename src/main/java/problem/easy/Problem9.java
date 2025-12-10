@@ -11,7 +11,8 @@ public class Problem9 {
      * @return 변환된 문자열 리스트
      */
     public static List<String> transformStrings(List<String> strings) {
-        // 여기에 코드 작성
-        return null;
+        return strings.stream()
+                .map(s -> s.length() >= 3 ? s.toUpperCase() : s)
+                .toList();
     }
 }
