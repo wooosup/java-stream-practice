@@ -1,6 +1,8 @@
 package problem.medium;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Problem38 {
 
@@ -12,7 +14,11 @@ public class Problem38 {
      * @return 'b'로 시작하는 문자열의 평균 길이, 해당 문자열이 없으면 0
      */
     public static double averageLengthOfStringsStartingWithB(List<String> strings) {
-        // 여기에 코드 작성
-        return 0;
+        return strings.stream()
+                .filter(s -> s.startsWith("b"))
+                .map(String::length)
+                .mapToInt(Integer::intValue)
+                .average()
+                .orElse(0.0);
     }
 }
