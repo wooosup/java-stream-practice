@@ -1,7 +1,6 @@
 package problem.easy;
 
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Problem14 {
 
@@ -12,11 +11,7 @@ public class Problem14 {
      * @return 길이가 3 이상인 키를 포함하는 새 Map
      */
     public static Map<String, String> filterKeys(Map<String, String> map) {
-        return map.entrySet().stream()
-                .filter(n -> n.getKey().length() >= 3)
-                .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        Map.Entry::getValue
-                ));
+        // 여기에 코드 작성
+        return null;
     }
 }

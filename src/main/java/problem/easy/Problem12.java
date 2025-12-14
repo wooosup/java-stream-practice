@@ -1,9 +1,6 @@
 package problem.easy;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class Problem12 {
 
@@ -14,10 +11,7 @@ public class Problem12 {
      * @return 문자열 길이를 값으로 가지는 새 Map
      */
     public static Map<String, Integer> mapStringLength(Map<String, String> map) {
-        return map.entrySet().stream()
-                .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        entry -> entry.getValue().length()
-                ));
+        // 여기에 코드 작성
+        return null;
     }
 }
