@@ -12,7 +12,8 @@ public class Problem42 {
      * @return 조건을 만족하는 숫자들의 합
      */
     public static int sumSpecialMultiples(List<Integer> numbers) {
-        // 여기에 코드 작성
-        return 0;
+        return numbers.stream()
+                .mapToInt(n -> n % 5 == 0 ? n * 2 : n)
+                .sum();
     }
 }
