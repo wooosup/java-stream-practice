@@ -1,6 +1,7 @@
 package problem.medium;
 
 import java.util.List;
+import java.util.stream.Collectors;
 import problem.medium.resources.Employee;
 
 public class Problem51 {
@@ -13,7 +14,10 @@ public class Problem51 {
      * @return 조건을 만족하는 직원들의 이름 리스트
      */
     public static List<String> getNamesOfITDepartmentEmployeesOver30(List<Employee> employees) {
-        // 여기에 코드 작성
-        return null;
+        return employees.stream()
+                .filter(employee -> employee.getDepartment().equals("IT") && employee.getAge() >= 30)
+                .map(Employee::getName)
+                .sorted()
+                .toList();
     }
 }
