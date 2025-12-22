@@ -13,9 +13,9 @@ public class Problem59Test {
     @Test
     public void testGetTotalPriceByCategory() {
         List<Product> products = Arrays.asList(
-                new Product("Milk", 3.50),
-                new Product("Bread", 2.50),
-                new Product("Apple", 1.50)
+                new Product("Milk", 3.50, "Food"),
+                new Product("Bread", 2.50, "Food"),
+                new Product("Apple", 1.50, "Food")
         );
 
         Map<Character, Double> expected = Map.of('M', 3.50, 'B', 2.50, 'A', 1.50);

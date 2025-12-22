@@ -13,8 +13,8 @@ public class Problem54Test {
     @Test
     public void testGetMostExpensiveProductName() {
         List<Product> products = Arrays.asList(
-                new Product("Laptop", 1200.00),
-                new Product("Smartphone", 800.00)
+                new Product("Laptop", 1200.00, "Electronics"),
+                new Product("Smartphone", 800.00, "Electronics")
         );
         assertEquals("Laptop", Problem54.getMostExpensiveProductName(products));
         assertEquals("", Problem54.getMostExpensiveProductName(Collections.emptyList()));

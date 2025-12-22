@@ -12,9 +12,9 @@ public class Problem52Test {
     @Test
     public void testGetProductNamesUnder20Dollars() {
         List<Product> products = Arrays.asList(
-                new Product("Milk", 3.50),
-                new Product("Bread", 2.50),
-                new Product("Laptop", 500.00)
+                new Product("Milk", 3.50, "Food"),
+                new Product("Bread", 2.50, "Food"),
+                new Product("Laptop", 500.00, "Electronics")
         );
 
         List<String> expected = Arrays.asList("Milk", "Bread");

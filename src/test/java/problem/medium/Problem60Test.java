@@ -27,9 +27,9 @@ public class Problem60Test {
         );
 
         List<Product> products = Arrays.asList(
-                new Product("Laptop", 1000.00),
-                new Product("Smartphone", 800.00),
-                new Product("Bread", 3.00)
+                new Product("Laptop", 1000.00, "Electronics"),
+                new Product("Smartphone", 800.00, "Electronics"),
+                new Product("Bread", 3.00, "Food")
         );
 
         double expected = 1800.00; // Alice의 노트북과 Bob의 스마트폰 가격 합계
